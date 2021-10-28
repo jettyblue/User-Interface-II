@@ -1,1 +1,149 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%; /*might need to comment out later*/
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    /* border: 1px solid black;     */
+}
+
+/*General Styles*/
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #4f4f4f;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #FFE8D6;
+}
+
+header{
+    background-color: lightgrey;
+    padding: 1% 2%;
+}
+header h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+nav{
+    display: flex;
+    padding: 1% 1%;
+}
+nav a{
+    padding: 0 1.5%;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #4f4f4f;
+    color: #4f4f4f;
+}
+nav a:hover{
+    background-color: #4f4f4f;
+    color: white;
+}
+
+/* About Section Styles */
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+}
+.bg-img img{
+    margin: 5% 14%;
+    width: 100%;
+    border: 1px solid #4f4f4f;
+}
+.about{
+    width: 45%;
+    margin-top: 10%;
+}
+.about h2{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 2% 0;
+}
+.about button{
+    border: 1px solid #4f4f4f;
+    padding: 0.5% 2%;
+}
+.about p{
+    font-size: 2rem;
+    margin: 2% 0;
+    width: 70%;
+}
+
+/* Portfolio Section Styles */
+.portfolio-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.portfolio-1 div{
+    padding: 1% 0;
+    margin-bottom: 3%;
+}
+.portfolio-1 img{
+    border: 1px solid #4f4f4f;
+}
+.portfolio-1 p{
+    text-align: center;
+    font-weight: bold;
+}
+.portfolio-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.portfolio-2 div{
+    margin-bottom: 3%;
+}
+.portfolio-2 img{
+    border: 1px solid #4f4f4f;
+}
+.portfolio-2 p{
+    text-align: center;
+    font-weight: bold;
+}
+footer{
+    background-color: lightgrey;
+    align-items: center;
+    padding: 3% 0;
+}
+footer p{
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+footer form{
+    align-items: center;
+    text-align: center;
+    padding: 1% 2%;
+}
+form button{
+    padding: 1% 2%;
+    font-size: 1.65rem;
+}
+form button:hover{
+    background-color: #4f4f4f;
+    color: white;
+}
