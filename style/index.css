@@ -21,7 +21,7 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
     margin: 0;
     box-sizing: border-box;
     max-width: 100%;
-    /* border: 1px solid black;     */
+    /* border: 1px solid black; */
 }
 
 /*General Styles*/
@@ -148,10 +148,90 @@ form button:hover{
     color: white;
 }
 
+/* MEDIA QUERY FOR TABLET */
 @media (max-width: 800px){
-
+  .container{
+      margin-right: 0;
+  }
+  .bg-img img{
+      margin-left: 2%;
+      width: 95%;
+  }
+  .about{
+      margin-top: 7%;
+      margin-left: 2%;
+  }
+  .about p{
+      margin-right: 2%;
+      width: 85%;
+  }
+  footer p{
+      font-size: 2rem;
+  }
+  footer form button{
+    padding: 1% 1%;
+    font-size: 1.4rem;
+  }
 }
 
+/* MEDIA QUERY FOR MOBILE */
 @media (max-width: 500px){
-    
+    header h1{
+        text-align: center;
+    }
+    nav{
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 38%;
+    }
+    nav a{
+        align-items: center;
+    }
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .bg-img{
+        padding: 0 2%;
+    }
+    .about{
+        margin-top: -5%;
+        width: 96%;
+    }
+    .about h2{
+        text-align: center;
+        font-size: 4rem;
+    }
+    .about form button{
+        align-items: center;
+        margin-left: 40%;
+    }
+    .about p{
+        text-align: center;
+        width: 80%;
+        margin-left: 11%;
+    }
+    .portfolio-1{
+        max-width: 100%;
+        margin-top: 2%;
+    }
+    .portfolio-1 img{
+        width: 200px;
+        height: 200px;
+    }
+    .portfolio-2{
+        max-width: 100%;
+        margin-bottom: 4%;
+    }
+    .portfolio-2 img{
+        width: 200px;
+        height: 200px;
+    }
+    footer{
+        padding: 7%;
+    }
+    footer p{
+        font-size: 3rem;
+        padding-bottom: 2%;
+    }
 }
